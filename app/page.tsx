@@ -391,7 +391,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-bold text-white">YouTube</h4>
-                      <p className="text-sm text-gray-400">@FluxFuryOfficial</p>
+                      <p className="text-sm text-gray-400">@FluxyFury-c6u</p>
                     </div>
                   </div>
 
