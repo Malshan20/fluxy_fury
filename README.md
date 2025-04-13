@@ -49,7 +49,6 @@ Stay tuned for the live site where you'll be able to explore our achievements, m
 
 ### 🛠️ Installation
 
-```bash
 # Clone the repository
 git clone https://github.com/yourusername/fluxy_fury.git
 
@@ -61,11 +60,10 @@ npm install
 
 # Run the development server
 npm run dev
-🧩 Supabase Database Setup
-🏅 Create the achievements Table
-sql
-Copy
-Edit
+
+## 🧩 Supabase Database Setup
+## 🏅 Create the achievements Table
+
 CREATE TABLE achievements (
   id SERIAL PRIMARY KEY,
   title TEXT NOT NULL,
@@ -75,24 +73,20 @@ CREATE TABLE achievements (
   image_url TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
-🌟 Sample Data
-sql
-Copy
-Edit
+## 🌟 Add Sample Data
 INSERT INTO achievements (title, description, prize, date, image_url) VALUES
 ('2024 Fortnite World Cup', 'Champions of the most prestigious Fortnite tournament, defeating 100 teams.', '$3,000,000', 'March 2024', '/images/achievement1.jpg'),
 ('FNCS Chapter 4', 'Back-to-back champions in the Fortnite Champion Series.', '$1,200,000', 'November 2023', '/images/achievement2.jpg'),
 ('Dreamhack Open', 'First place in the international Dreamhack tournament.', '$500,000', 'July 2023', '/images/achievement3.jpg'),
 ('Winter Royale', 'Dominated the Winter Royale tournament with a record-breaking score.', '$800,000', 'December 2023', '/images/achievement1.jpg'),
 ('Twitch Rivals', 'First place in the Twitch Rivals Fortnite Showdown.', '$250,000', 'February 2024', '/images/achievement2.jpg');
-🔐 Environment Setup
+
+## 🔐 Environment Setup
 Create a .env.local file at the root and add your Supabase credentials:
 
-env
-Copy
-Edit
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-📫 Contact Us
+
+## 📫 Contact Us
 Want to collaborate, sponsor, or just vibe with the team?
 Feel free to reach out via the Contact Us section on the site, or hit us up on our socials.
