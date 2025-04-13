@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 0 0 5px rgba(220, 38, 38, 0.5), 0 0 10px rgba(220, 38, 38, 0.3), 0 0 15px rgba(220, 38, 38, 0.2);
+}
+
+/* Parallax effect */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Gradient animations */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(220, 38, 38, 0.7);
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(220, 38, 38, 0.7);
+  color: white;
+}
