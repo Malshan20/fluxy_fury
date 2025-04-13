@@ -9,7 +9,7 @@ import MouseTrail from "@/components/mouse-trail"
 import ParallaxSection from "@/components/parallax-section"
 import TeamCard from "@/components/team-card"
 import AchievementCard from "@/components/achievement-card"
-import MobileNav from "@/components/mobile-nav" // Import the mobile navigation
+import MobileNav from "@/components/mobile-nav" 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
