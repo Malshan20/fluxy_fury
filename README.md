@@ -70,16 +70,15 @@ CREATE TABLE achievements (
   description TEXT NOT NULL,
   prize TEXT NOT NULL,
   date TEXT NOT NULL,
-  image_url TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 ## 🌟 Add Sample Data
-INSERT INTO achievements (title, description, prize, date, image_url) VALUES
-('2024 Fortnite World Cup', 'Champions of the most prestigious Fortnite tournament, defeating 100 teams.', '$3,000,000', 'March 2024', '/images/achievement1.jpg'),
-('FNCS Chapter 4', 'Back-to-back champions in the Fortnite Champion Series.', '$1,200,000', 'November 2023', '/images/achievement2.jpg'),
-('Dreamhack Open', 'First place in the international Dreamhack tournament.', '$500,000', 'July 2023', '/images/achievement3.jpg'),
-('Winter Royale', 'Dominated the Winter Royale tournament with a record-breaking score.', '$800,000', 'December 2023', '/images/achievement1.jpg'),
-('Twitch Rivals', 'First place in the Twitch Rivals Fortnite Showdown.', '$250,000', 'February 2024', '/images/achievement2.jpg');
+INSERT INTO achievements (title, description, prize, date) VALUES
+('2024 Fortnite World Cup', 'Champions of the most prestigious Fortnite tournament, defeating 100 teams.', '$3,000,000', 'March 2024'),
+('FNCS Chapter 4', 'Back-to-back champions in the Fortnite Champion Series.', '$1,200,000', 'November 2023'),
+('Dreamhack Open', 'First place in the international Dreamhack tournament.', '$500,000', 'July 2023'),
+('Winter Royale', 'Dominated the Winter Royale tournament with a record-breaking score.', '$800,000', 'December 2023'),
+('Twitch Rivals', 'First place in the Twitch Rivals Fortnite Showdown.', '$250,000', 'February 2024');
 
 ## 🔐 Environment Setup
 Create a .env.local file at the root and add your Supabase credentials:
