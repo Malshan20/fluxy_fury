@@ -505,7 +505,7 @@ export default function Home() {
                 className="max-w-[150px] mb-4 object-contain"
               />
               <p className="text-sm text-gray-400 text-center max-w-[180px]">
-                Game Experience May Change During Online Play
+               Unleash your potential and dominate the game with us!
               </p>
             </div>
           </div>
