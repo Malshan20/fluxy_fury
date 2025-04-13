@@ -50,7 +50,7 @@ Stay tuned for the live site where you'll be able to explore our achievements, m
 ### 🛠️ Installation
 
 # Clone the repository
-git clone https://github.com/yourusername/fluxy_fury.git
+git clone https://github.com/Malshan20/fluxy_fury.git
 
 # Navigate to the project directory
 cd fluxy_fury
